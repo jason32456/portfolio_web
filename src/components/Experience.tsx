@@ -4,39 +4,35 @@ import { Calendar, MapPin } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      title: 'Senior Full Stack Developer',
-      company: 'TechCorp Solutions',
-      location: 'San Francisco, CA',
-      period: '2022 - Present',
+      title: 'IT General Manager',
+      company: 'Binus Student Learning Community',
+      location: 'Jakarta, Indonesia',
+      period: 'February 2025 - Present',
       description: [
-        'Led development of core platform features serving 100k+ users',
-        'Mentored junior developers and conducted code reviews',
-        'Implemented CI/CD pipelines reducing deployment time by 60%',
-        'Collaborated with design and product teams on user experience improvements'
+        'Leading the development of rebuilding an internally used learning website',
+        'Planned improvements for the main website',
+        'Coordinated with team members to design and structure the applications to align with the organization\'s goals'
       ]
     },
     {
-      title: 'Frontend Developer',
-      company: 'Digital Agency Pro',
-      location: 'New York, NY',
-      period: '2020 - 2022',
+      title: 'IT Support',
+      company: 'Binus Student Learning Community',
+      location: 'Jakarta, Indonesia',
+      period: 'December 2023 - February 2025',
       description: [
-        'Developed responsive web applications for diverse client base',
-        'Optimized application performance resulting in 40% faster load times',
-        'Worked closely with designers to implement pixel-perfect interfaces',
-        'Contributed to open-source projects and internal tooling'
+        'Developed user interfaces for the BSLC website',
+        'Performed maintenance for BSLC'
       ]
     },
     {
-      title: 'Junior Web Developer',
-      company: 'StartupXYZ',
-      location: 'Austin, TX',
-      period: '2019 - 2020',
+      title: 'IT Club Member',
+      company: 'SMA Karangturi',
+      location: 'Jakarta, Indonesia',
+      period: 'August 2022 - April 2023',
       description: [
-        'Built and maintained company website and internal tools',
-        'Learned modern development practices and agile methodologies',
-        'Participated in feature planning and technical discussions',
-        'Gained experience with version control and collaborative development'
+        'Participated in weekly sessions focused on various IT topics',
+        'Collaborated with peers to learn and solve technical challenges',
+        'Developed skills in the fundamentals of programming'
       ]
     }
   ];
@@ -46,9 +42,9 @@ const Experience = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Work Experience</h2>
+            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Organizational Experience</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-              My professional journey and key accomplishments
+              My journey and key accomplishments in various organizations
             </p>
           </div>
 

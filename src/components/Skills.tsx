@@ -6,9 +6,9 @@ const Skills = () => {
       title: 'Frontend',
       color: 'blue',
       skills: [
-        { name: 'React', level: 95 },
-        { name: 'TypeScript', level: 90 },
-        { name: 'Tailwind CSS', level: 92 },
+        { name: 'React', level: 80 },
+        { name: 'TypeScript', level: 75 },
+        { name: 'Tailwind CSS', level: 75 },
         { name: 'Next.js', level: 85 },
       ]
     },
@@ -16,20 +16,29 @@ const Skills = () => {
       title: 'Backend',
       color: 'emerald',
       skills: [
-        { name: 'Node.js', level: 88 },
-        { name: 'Python', level: 85 },
-        { name: 'PostgreSQL', level: 80 },
-        { name: 'MongoDB', level: 75 },
+        { name: 'Node.js', level: 80 },
+        { name: 'Python', level: 90 },
+        { name: 'PostgreSQL', level: 75 },
+        { name: 'MongoDB', level: 68 },
       ]
     },
     {
       title: 'Tools & Other',
       color: 'amber',
       skills: [
-        { name: 'Git', level: 90 },
-        { name: 'Docker', level: 75 },
-        { name: 'AWS', level: 70 },
+        { name: 'Git', level: 88 },
+        { name: 'Docker', level: 65 },
+        { name: 'AWS', level: 50 },
         { name: 'Figma', level: 85 },
+      ]
+    },
+    {
+      title: 'Languages',
+      color: 'indigo',
+      skills: [
+        { name: 'Indonesian (Native)', level: 100 },
+        { name: 'English', level: 90 },
+        { name: 'Chinese', level: 20 },
       ]
     }
   ];
@@ -39,6 +48,7 @@ const Skills = () => {
       blue: { bg: 'bg-blue-500', text: 'text-blue-600', border: 'border-blue-200' },
       emerald: { bg: 'bg-emerald-500', text: 'text-emerald-600', border: 'border-emerald-200' },
       amber: { bg: 'bg-amber-500', text: 'text-amber-600', border: 'border-amber-200' },
+      indigo: { bg: 'bg-indigo-500', text: 'text-indigo-600', border: 'border-indigo-200' },
     };
     return colorMap[color as keyof typeof colorMap][type];
   };

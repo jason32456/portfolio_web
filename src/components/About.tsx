@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, Palette, Zap } from 'lucide-react';
+import { Database, LineChart, Code2, Users, Package } from 'lucide-react';
 
 const About = () => {
   return (
@@ -9,7 +9,7 @@ const About = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">About Me</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-              Passionate developer with 5+ years of experience creating digital solutions
+              Computer Science Student with passion in Artificial Intelligence
             </p>
           </div>
 
@@ -17,64 +17,83 @@ const About = () => {
             <div>
               <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">My Story</h3>
               <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                I started my journey in web development during college, fascinated by the power 
-                of code to bring ideas to life. What began as curiosity has evolved into a 
-                passion for creating seamless user experiences and robust applications.
+                I am a Computer Science student focused on AI/ML and software engineering. I build 
+                reproducible ML prototypes and production-ready web features. I combine data work, 
+                model evaluation, and full-stack implementation to turn experiments into interactive 
+                demos and maintainable services.
               </p>
               <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                Today, I specialize in full-stack development with a focus on modern frameworks 
-                and best practices. I love collaborating with teams to solve complex problems 
-                and deliver exceptional products.
+                My project work spans comparative model studies, time-series forecasting, and end-user apps. 
+                Highlights include an MRI tumor classification study contrasting CNNs and Vision Transformers, 
+                a demo for water-potability classification, and a TensorFlow RNN for short-term air-quality 
+                forecasting validated with MAE/RMSE. I also contributed modular Next.js components, implemented 
+                role-based auth using Clerk, and coordinated cross-discipline teams to produce deployment-ready 
+                deliverables.
               </p>
-              <div className="flex flex-wrap gap-3">
-                <span className="px-4 py-2 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm font-medium">
-                  Problem Solver
-                </span>
-                <span className="px-4 py-2 bg-emerald-100 dark:bg-emerald-900 text-emerald-800 dark:text-emerald-200 rounded-full text-sm font-medium">
-                  Team Player
-                </span>
-                <span className="px-4 py-2 bg-amber-100 dark:bg-amber-900 text-amber-800 dark:text-amber-200 rounded-full text-sm font-medium">
-                  Lifelong Learner
-                </span>
-              </div>
+              <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                I am seeking an entry-level AI/ML or software engineering role where I can contribute to 
+                data pipelines, model validation, and web deployment while growing into an ML engineer 
+                who ships reliable systems.
+              </p>
             </div>
 
             <div className="space-y-8">
               <div className="flex items-start space-x-4">
                 <div className="p-3 bg-blue-100 dark:bg-blue-900 rounded-lg">
-                  <Code className="text-blue-600 dark:text-blue-400" size={24} />
+                  <Database className="text-blue-600 dark:text-blue-400" size={24} />
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Clean Code</h4>
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Reproducible ML workflows</h4>
                   <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                    I write maintainable, scalable code following industry best practices 
-                    and modern development patterns.
+                    Data cleaning, feature engineering, experiments, and notebooks.
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
                 <div className="p-3 bg-emerald-100 dark:bg-emerald-900 rounded-lg">
-                  <Palette className="text-emerald-600 dark:text-emerald-400" size={24} />
+                  <LineChart className="text-emerald-600 dark:text-emerald-400" size={24} />
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Design Focus</h4>
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Model evaluation & metrics</h4>
                   <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                    I believe great functionality deserves great design. I create 
-                    interfaces that are both beautiful and intuitive.
+                    MAE, RMSE, accuracy, micro-F1 and visual diagnostics.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <div className="p-3 bg-purple-100 dark:bg-purple-900 rounded-lg">
+                  <Code2 className="text-purple-600 dark:text-purple-400" size={24} />
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Full-stack delivery</h4>
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                    Next.js components, REST interfaces, Streamlit demos, authentication (Clerk).
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
                 <div className="p-3 bg-amber-100 dark:bg-amber-900 rounded-lg">
-                  <Zap className="text-amber-600 dark:text-amber-400" size={24} />
+                  <Users className="text-amber-600 dark:text-amber-400" size={24} />
                 </div>
                 <div>
-                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Performance</h4>
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Collaboration & coordination</h4>
                   <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                    I optimize every aspect of applications for speed, accessibility, 
-                    and exceptional user experience.
+                    Task planning, GitHub workflows, handoffs between design and dev.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <div className="p-3 bg-indigo-100 dark:bg-indigo-900 rounded-lg">
+                  <Package className="text-indigo-600 dark:text-indigo-400" size={24} />
+                </div>
+                <div>
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Pragmatic deployment focus</h4>
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                    Packaging prototypes so they are testable and demonstrable.
                   </p>
                 </div>
               </div>

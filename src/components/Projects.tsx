@@ -1,43 +1,39 @@
 import React from 'react';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.',
-      image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
-      liveUrl: '#',
-      githubUrl: '#',
+      title: 'Peer to Peer Mentoring Web Application',
+      description: 'Full stack mentoring site that connects tutees and tutors for personalized learning experience',
+      image: 'https://images.pexels.com/photos/5905709/pexels-photo-5905709.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['Next.js', 'PostgreSQL', 'Clerk Authentication'],
+      url: 'https://github.com/reynardaj/WeLearn',
       featured: true
     },
     {
-      title: 'Task Management App',
-      description: 'Collaborative project management tool with real-time updates, team chat, and progress tracking.',
-      image: 'https://images.pexels.com/photos/7415062/pexels-photo-7415062.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Next.js', 'TypeScript', 'Prisma', 'WebSocket'],
-      liveUrl: '#',
-      githubUrl: '#',
+      title: 'Air Quality Forecasting',
+      description: 'Forecasts short-term air quality from historical sensor data. Project involved cleaning and engineering time-series features from a Kaggle dataset, training a TensorFlow RNN, and validating results with MAE and RMSE.',
+      image: 'https://images.pexels.com/photos/4391470/pexels-photo-4391470.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['sklearn', 'tensorflow', 'RNN'],
+      url: 'https://github.com/jason32456/AQM_AI/',
       featured: true
     },
     {
-      title: 'Weather Dashboard',
-      description: 'Beautiful weather application with location-based forecasts and interactive maps.',
-      image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'APIs', 'Charts.js', 'Tailwind'],
-      liveUrl: '#',
-      githubUrl: '#',
-      featured: false
+      title: 'Nindyamaya BINUS Student Learning Community',
+      description: 'Planned the site structure and features for a mentor–mentee platform and coordinated designers and developers to turn requirements into implementation-ready work.',
+      image: '/src/resource/Nindyamaya.png',
+      technologies: ['MySQL', 'ViteJs', 'NodeJs'],
+      url: 'https://newnindyamaya.bslc.or.id/',
+      featured: true
     },
     {
-      title: 'Portfolio Website',
-      description: 'Responsive portfolio website with smooth animations and modern design principles.',
-      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'Tailwind', 'Framer Motion', 'Vite'],
-      liveUrl: '#',
-      githubUrl: '#',
-      featured: false
+      title: 'Safesip-Water Drinkability Classifier',
+      description: 'Developed a machine learning classifier that determines water potability from measured properties including pH, hardness, and turbidity. Work included data cleaning, feature engineering, model training and validation, and visualization of predicted vs actual outcomes.',
+      image: 'https://images.pexels.com/photos/416528/pexels-photo-416528.jpeg?auto=compress&cs=tinysrgb&w=800',
+      technologies: ['sklearn', 'streamlit', 'matplotlib'],
+      url: 'https://safesip.streamlit.app/',
+      featured: true
     }
   ];
 
@@ -86,18 +82,13 @@ const Projects = () => {
                   
                   <div className="flex space-x-4">
                     <a 
-                      href={project.liveUrl}
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="flex items-center space-x-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium transition-colors"
                     >
                       <ExternalLink size={16} />
-                      <span>Live Demo</span>
-                    </a>
-                    <a 
-                      href={project.githubUrl}
-                      className="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 font-medium transition-colors"
-                    >
-                      <Github size={16} />
-                      <span>Source Code</span>
+                      <span>View</span>
                     </a>
                   </div>
                 </div>
